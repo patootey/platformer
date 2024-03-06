@@ -1,0 +1,82 @@
+{ "frames": {
+   "walk_strip8 0.png": {
+    "frame": { "x": 0, "y": 0, "w": 10, "h": 14 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 10, "h": 14 },
+    "sourceSize": { "w": 10, "h": 14 },
+    "duration": 100
+   },
+   "walk_strip8 1.png": {
+    "frame": { "x": 10, "y": 0, "w": 10, "h": 14 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 10, "h": 14 },
+    "sourceSize": { "w": 10, "h": 14 },
+    "duration": 100
+   },
+   "walk_strip8 2.png": {
+    "frame": { "x": 20, "y": 0, "w": 10, "h": 14 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 10, "h": 14 },
+    "sourceSize": { "w": 10, "h": 14 },
+    "duration": 100
+   },
+   "walk_strip8 3.png": {
+    "frame": { "x": 30, "y": 0, "w": 10, "h": 14 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 10, "h": 14 },
+    "sourceSize": { "w": 10, "h": 14 },
+    "duration": 100
+   },
+   "walk_strip8 4.png": {
+    "frame": { "x": 40, "y": 0, "w": 10, "h": 14 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 10, "h": 14 },
+    "sourceSize": { "w": 10, "h": 14 },
+    "duration": 100
+   },
+   "walk_strip8 5.png": {
+    "frame": { "x": 50, "y": 0, "w": 10, "h": 14 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 10, "h": 14 },
+    "sourceSize": { "w": 10, "h": 14 },
+    "duration": 100
+   },
+   "walk_strip8 6.png": {
+    "frame": { "x": 60, "y": 0, "w": 10, "h": 14 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 10, "h": 14 },
+    "sourceSize": { "w": 10, "h": 14 },
+    "duration": 100
+   },
+   "walk_strip8 7.png": {
+    "frame": { "x": 70, "y": 0, "w": 10, "h": 14 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 10, "h": 14 },
+    "sourceSize": { "w": 10, "h": 14 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.40-x64",
+  "image": "walk_strip8-sheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 80, "h": 14 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
