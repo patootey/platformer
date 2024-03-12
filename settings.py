@@ -1,17 +1,6 @@
 import pygame
 from pygame.surface import Surface
 
-level_grid = [
-    "                               ",
-    "                         XX      ",
-    "        P          XX            ",
-    "XX     XXX              XX   XXXXXX",
-    "         XXXX   XXXX    XXXX           ",
-    "XX     XXX              XX     ",
-    "        XXXXXXXXXXXXXXXX       ",
-    "XX     XXX              XX     ",
-]
-
 
 tile_size = 16
 screen_width: int = 640

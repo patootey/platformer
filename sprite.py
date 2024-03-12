@@ -49,7 +49,7 @@ def camera_draw(group: pygame.sprite.AbstractGroup, camera: Camera, surface: Sur
 
 
 class PlayerGroup(pygame.sprite.GroupSingle):
-    def __init__(self, camera: Camera, sprite: PlatformSprite | None = None) -> None:
+    def __init__(self, camera: Camera, sprite: PlatformSprite) -> None:
         super().__init__(sprite)
         self.camera = camera
 
