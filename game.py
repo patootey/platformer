@@ -36,11 +36,6 @@ def main():
         if debug_enabled:
             level.debug_draw()
 
-        #        if level.player.state == "walking":
-        #            pygame.mixer.init()
-        #            pygame.mixer.music.load("audio/player/Footstep Grass Running 1_08.wav")
-        #            pygame.mixer.music.play(0)
-
         pygame.display.flip()
         delta_time = clock.tick(fps)
 

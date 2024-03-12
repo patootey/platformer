@@ -147,9 +147,6 @@ class Player(PlatformSprite):
         self.apply_gravity()
         self.animation_time += delta_time
 
-        # if self.direction.x == -1:
-        #    self.image = pygame.transform.flip(self.image, True, False)
-
         if self.state == "idle":
             if self.look_direction == 1:
                 idle_frames = self.idle_frames_right
