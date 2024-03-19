@@ -9,7 +9,7 @@ from settings import draw_screen, fps, init_screen
 def main():
     # screen = Screen()
     display = init_screen()
-    level_data = load_level(Path("map/test_2.tmj"))
+    level_data = load_level(Path("map/test_MAMAM.tmj"))
     level = Level(level_data, display)
     clock = pygame.time.Clock()
     delta_time = 0

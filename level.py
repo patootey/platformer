@@ -100,6 +100,12 @@ class Level:
         self.pickup_coin = self.pickup_coins_sprite_sheet.subsurface(0, 0, 12, 12)
         self.tile_9 = self.tile_sheet.subsurface(16, 16, 16, 16)
         self.tile_16 = self.tile_sheet.subsurface(16, 32, 16, 16)
+        self.tile_8 = self.tile_sheet.subsurface(0, 16, 16, 16)
+        self.tile_10 = self.tile_sheet.subsurface(32, 16, 16, 16)
+        self.tile_15 = self.tile_sheet.subsurface(0, 32, 16, 16)
+        self.tile_17 = self.tile_sheet.subsurface(32, 32, 16, 16)
+
+        self.tile_27 = self.tile_sheet.subsurface(80, 48, 16, 16)
         self.level_setup(level_data.tiles)
         self.level_data = level_data
 
@@ -120,12 +126,28 @@ class Level:
                 if tile_id == 2:
                     tile = Tile((x, y), self.tile_2)
                     self.tiles.add(tile)
+                if tile_id == 8:
+                    tile = Tile((x, y), self.tile_8)
+                    self.tiles.add(tile)
                 if tile_id == 9:
                     tile = Tile((x, y), self.tile_9)
+                    self.tiles.add(tile)
+                if tile_id == 10:
+                    tile = Tile((x, y), self.tile_10)
+                    self.tiles.add(tile)
+                if tile_id == 15:
+                    tile = Tile((x, y), self.tile_15)
                     self.tiles.add(tile)
                 if tile_id == 16:
                     tile = Tile((x, y), self.tile_16)
                     self.tiles.add(tile)
+                if tile_id == 17:
+                    tile = Tile((x, y), self.tile_17)
+                    self.tiles.add(tile)
+                if tile_id == 27:
+                    tile = Tile((x, y), self.tile_27)
+                    self.tiles.add(tile)
+
                 if tile_id == 7:
                     pickup = PickUpSprite((x, y), self.pickup_coin)
                     self.pickups.add(pickup)
@@ -133,9 +155,6 @@ class Level:
                 if tile_id == 1:
                     # player_sprite = Player((x, y))
                     self.player_start_position = self.player.rect.topleft = (x, y)
-
-                if tile_id == 3:
-                    self.enemy.rect.topleft = (x, y)
 
     def camera_movement(self):
         # player_group = self.player_group.sprite
@@ -263,5 +282,5 @@ class Level:
 
 
 if __name__ == "__main__":
-    level = load_level(Path("map/test_2.tmj"))
+    level = load_level(Path("map/test_22.tmj"))
     print(level)
