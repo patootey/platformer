@@ -3,6 +3,15 @@ from sprite import PlatformSprite
 
 
 class PickUpSprite(PlatformSprite):
+    """
+    Represents a pickup sprite in the game, inheriting from PlatformSprite.
+
+    Attributes:
+        image (Surface): The image of the pickup sprite.
+        rect (Rect): The rectangle representing the position and dimensions of the pickup sprite.
+
+    """
+
     def __init__(self, position, image: Surface):
         super().__init__()
         self.image = image

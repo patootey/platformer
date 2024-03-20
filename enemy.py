@@ -4,6 +4,24 @@ from sprite import PlatformSprite
 
 
 class Enemy(PlatformSprite):
+    """
+    Represents an enemy character in the game, inheriting from PlatformSprite.
+
+    Attributes:
+        height (int): The height of the enemy sprite.
+        width (int): The width of the enemy sprite.
+        state (str): The current state of the enemy, such as "idle" or "walking".
+        idle_frames (List[Surface]): A list of frames for the idle animation of the enemy.
+        image (Surface): The current image of the enemy sprite.
+        rect (Rect): The rectangle representing the position and dimensions of the enemy sprite.
+        animation_time (float): The time elapsed since the start of the animation.
+        frame_time_idle (int): The time interval between frames for the idle animation.
+        frame_time_walking (int): The time interval between frames for the walking animation.
+
+    Methods:
+        update: Updates the state and animation of the enemy sprite based on the elapsed time.
+    """
+
     def __init__(self, pos: tuple[float, float] = (0, 0)):
         super().__init__()
         # self.path()

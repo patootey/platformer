@@ -7,6 +7,14 @@ from camera import Camera
 
 
 class PlatformSprite(Sprite):
+    """
+    Represents a sprite in the platformer game.
+
+    Attributes:
+        rect (Rect): The rectangle representing the position and dimensions of the sprite.
+
+    """
+
     rect: Rect
 
     def __init__(self, *groups: AbstractGroup) -> None:
@@ -49,6 +57,16 @@ def camera_draw(group: pygame.sprite.AbstractGroup, camera: Camera, surface: Sur
 
 
 class PlayerGroup(pygame.sprite.GroupSingle):
+    """
+    Represents a group containing a single player sprite.
+
+    Attributes:
+        camera (Camera): The camera used to adjust sprite positions during drawing.
+
+    Methods:
+        draw: Draws the sprite onto the surface, adjusting for camera position.
+    """
+
     def __init__(self, camera: Camera, sprite: PlatformSprite) -> None:
         super().__init__(sprite)
         self.camera = camera
@@ -65,6 +83,16 @@ class PlayerGroup(pygame.sprite.GroupSingle):
 
 
 class TileGroup(pygame.sprite.Group):
+    """
+    Represents a group containing sprites representing tiles.
+
+    Attributes:
+        camera (Camera): The camera used to adjust sprite positions during drawing.
+
+    Methods:
+        draw: Draws the sprites onto the surface, adjusting for camera position.
+    """
+
     def __init__(self, camera: Camera, *sprites: PlatformSprite) -> None:
         super().__init__(sprites)
         self.camera = camera

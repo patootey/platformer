@@ -5,6 +5,46 @@ from sprite import PlatformSprite
 
 
 class Player(PlatformSprite):
+    """
+    Represents the player character in the game, inheriting from PlatformSprite.
+
+    Attributes:
+        height (int): The height of the player sprite.
+        width (int): The width of the player sprite.
+        idle_frames_right (List[Surface]): Frames for the idle animation facing right.
+        idle_frames_left (List[Surface]): Frames for the idle animation facing left.
+        walking_frames_right (List[Surface]): Frames for the walking animation facing right.
+        walking_frames_left (List[Surface]): Frames for the walking animation facing left.
+        jump_frame_right (Surface): Frame for the jumping animation facing right.
+        jump_frame_left (Surface): Frame for the jumping animation facing left.
+        falling_frame_right (Surface): Frame for the falling animation facing right.
+        falling_frame_left (Surface): Frame for the falling animation facing left.
+        image (Surface): The current image of the player sprite.
+        rect (Rect): The rectangle representing the position and dimensions of the player sprite.
+        next_pos (Rect): The next position of the player sprite.
+        is_on_ground (bool): Indicates if the player is currently on the ground.
+        jump_speed (float): The initial jump speed of the player.
+        gravity (float): The gravitational acceleration affecting the player.
+        direction (Vector2): The direction of movement of the player.
+        look_direction (int): The direction the player is facing (-1 for left, 1 for right).
+        speed (int): The movement speed of the player.
+        debug_history (List[Rect]): History of debug positions of the player.
+        state (str): The current state of the player (e.g., "idle", "walking", "jumping").
+        jump_counter (int): Counter for the duration of the jump.
+        imageindex (int): Index of the current frame in the animation.
+        animation_time (float): The time elapsed since the start of the animation.
+        frame_time_idle (int): The time interval between frames for idle animation.
+        frame_time_walking (int): The time interval between frames for walking animation.
+
+    Methods:
+        debug_push_position: Adds the current position to the debug history.
+        movement: Handles player movement based on input.
+        jump: Initiates a jump for the player.
+        apply_gravity: Applies gravitational force to the player.
+        apply_position: Applies the next position to the player sprite.
+        update: Updates the state and animation of the player sprite.
+    """
+
     def __init__(self, pos: tuple[float, float] = (0, 0)):
         super().__init__()
         # self.path()

@@ -83,6 +83,31 @@ def hasCollided(a, b) -> bool:
 
 
 class Level:
+    """
+    Represents a level in the game, managing its setup, collision detection, camera movement,
+    and updating/drawing of sprites.
+
+    Attributes:
+        display_surface (Surface): The surface where the level is displayed.
+        camera_speed_x (int): The speed of horizontal camera movement.
+        camera (Camera): The camera object used for viewport transformation.
+        font (Font): The font used for text rendering.
+        tile_sheet (Surface): The sprite sheet containing tiles for the level.
+        pickup_coins_sprite_sheet (Surface): The sprite sheet containing pickup coins.
+        points (int): The total points collected in the level.
+
+    Methods:
+        level_setup: Sets up the level based on the layout of tiles.
+        camera_movement: Manages camera movement based on player position.
+        collision: Handles collision detection between player and pickups.
+        collision_x: Handles collision detection along the x-axis.
+        collision_y: Handles collision detection along the y-axis.
+        music: Plays background music for the level.
+        update: Updates the state of the level.
+        draw: Draws the level on the display surface.
+        debug_draw: Draws debug information on the display surface.
+    """
+
     def __init__(self, level_data: LevelData, surface: Surface):
         # level setup
         self.display_surface = surface
